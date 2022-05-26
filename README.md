@@ -1,8 +1,8 @@
-# Programiranje za prvi razred specijalizovanih IT odeljenja 
+# Veb dizajn i klijentsko veb programiranje za treći razred gimnazije društveni i opšti smer
 
-Ovaj repozitorijum posvećen je kursu za Programiranje za prvi razred specijalizovanih IT odeljenja. 
+Ovaj repozitorijum posvećen je kursu za Veb dizajn i klijentsko veb programiranje za treći razred gimnazije društveni i opšti smer. 
 
-Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/369/0](https://petlja.org/kurs/369/)
+Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/489/0](https://petlja.org/kurs/489/)
 
 Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/specit1_prog/releases
 
