@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap подршка компонентама</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'gim3_web_drustveni_i_opsti';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'gim3_web_drustveni_i_opsti';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Веб дизајн и готова веб дизајн решења за друштвени и општи смер</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-0_WP_01_opste>
+                    <h5>WP-1 WordPress - основе</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../0_WP_01_opste/01a_cms_citanje.html><div class="studioLecture" id=activity-01a_cms_citanje><i class="fas fa-file-alt activity-icon"></i>Готова решења за веб дизајн</div></a>
+                <a href=../0_WP_01_opste/01b_wp_citanje.html><div class="studioLecture" id=activity-01b_wp_citanje><i class="fas fa-file-alt activity-icon"></i>Основне компоненте система WordPress</div></a>
+                <a href=../0_WP_01_opste/01c_cms_wp_pitanja.html><div class="studioLecture" id=activity-01c_cms_wp_pitanja><i class="far fa-question-circle activity-icon"></i>CMS системи и WordPress - питања</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-0_WP_02_sadrzaj>
+                    <h5>WP-2 Креирање садржаја у систему WordPress</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../0_WP_02_sadrzaj/02a_wp_kreiranje_sadrzaja_citanje.html><div class="studioLecture" id=activity-02a_wp_kreiranje_sadrzaja_citanje><i class="fas fa-file-alt activity-icon"></i>Креирање садржаја</div></a>
+                <a href=../0_WP_02_sadrzaj/02b_wp_kreiranje_sadrzaja_pitanja.html><div class="studioLecture" id=activity-02b_wp_kreiranje_sadrzaja_pitanja><i class="far fa-question-circle activity-icon"></i>Креирање садржаја - питања</div></a>
+                <a href=../0_WP_02_sadrzaj/02c_wp_kreiranje_sadrzaja_zadaci.html><div class="studioLecture" id=activity-02c_wp_kreiranje_sadrzaja_zadaci><i class="fas fa-file-alt activity-icon"></i>Креирање садржаја - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-0_WP_03_teme_i_dodaci>
+                    <h5>WP-3 Теме и додаци</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../0_WP_03_teme_i_dodaci/03a_teme_i_dodaci_citanje.html><div class="studioLecture" id=activity-03a_teme_i_dodaci_citanje><i class="fas fa-file-alt activity-icon"></i>Теме и додаци</div></a>
+                <a href=../0_WP_03_teme_i_dodaci/03b_teme_i_dodaci_pitanja.html><div class="studioLecture" id=activity-03b_teme_i_dodaci_pitanja><i class="far fa-question-circle activity-icon"></i>Теме и додаци - питања</div></a>
+                <a href=../0_WP_03_teme_i_dodaci/03c_teme_i_dodaci_zadaci.html><div class="studioLecture" id=activity-03c_teme_i_dodaci_zadaci><i class="fas fa-file-alt activity-icon"></i>Теме и додаци - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_HTML_01_HTML_dokumenti>
+                    <h5>HTML-1 HTML документи</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_HTML_01_HTML_dokumenti/01a_prikazivanje_html_citanje.html><div class="studioLecture" id=activity-01a_prikazivanje_html_citanje><i class="fas fa-file-alt activity-icon"></i>Приказивање HTML документа</div></a>
+                <a href=../1_HTML_01_HTML_dokumenti/01b_elementi_html_citanje.html><div class="studioLecture" id=activity-01b_elementi_html_citanje><i class="fas fa-file-alt activity-icon"></i>Елементи HTML документа</div></a>
+                <a href=../1_HTML_01_HTML_dokumenti/01c_elementi_html_zadaci.html><div class="studioLecture" id=activity-01c_elementi_html_zadaci><i class="fas fa-file-alt activity-icon"></i>Елементи HTML документа - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_HTML_02_formatiranje_teksta>
+                    <h5>HTML-2 Форматирање текста</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_HTML_02_formatiranje_teksta/02a_formatiranje_teksta_citanje.html><div class="studioLecture" id=activity-02a_formatiranje_teksta_citanje><i class="fas fa-file-alt activity-icon"></i>Форматирање текста</div></a>
+                <a href=../1_HTML_02_formatiranje_teksta/02b_formatiranje_teksta_pitanja.html><div class="studioLecture" id=activity-02b_formatiranje_teksta_pitanja><i class="far fa-question-circle activity-icon"></i>Форматирање текста - питања</div></a>
+                <a href=../1_HTML_02_formatiranje_teksta/02c_formatiranje_teksta_zadaci.html><div class="studioLecture" id=activity-02c_formatiranje_teksta_zadaci><i class="fas fa-file-alt activity-icon"></i>Форматирање текста - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_HTML_03_liste_i_tabele>
+                    <h5>HTML-3 Листе и табеле</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_HTML_03_liste_i_tabele/03a_liste_citanje.html><div class="studioLecture" id=activity-03a_liste_citanje><i class="fas fa-file-alt activity-icon"></i>Листе</div></a>
+                <a href=../1_HTML_03_liste_i_tabele/03b_liste_pitanja.html><div class="studioLecture" id=activity-03b_liste_pitanja><i class="far fa-question-circle activity-icon"></i>Листе - питања</div></a>
+                <a href=../1_HTML_03_liste_i_tabele/03c_liste_zadaci.html><div class="studioLecture" id=activity-03c_liste_zadaci><i class="fas fa-file-alt activity-icon"></i>Листе - задаци</div></a>
+                <a href=../1_HTML_03_liste_i_tabele/03d_tabele_citanje.html><div class="studioLecture" id=activity-03d_tabele_citanje><i class="fas fa-file-alt activity-icon"></i>Табеле</div></a>
+                <a href=../1_HTML_03_liste_i_tabele/03e_tabele_pitanja.html><div class="studioLecture" id=activity-03e_tabele_pitanja><i class="far fa-question-circle activity-icon"></i>Табеле - питања</div></a>
+                <a href=../1_HTML_03_liste_i_tabele/03f_tabele_zadaci.html><div class="studioLecture" id=activity-03f_tabele_zadaci><i class="fas fa-file-alt activity-icon"></i>Табеле - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_HTML_04_povezivanje_dokumenata>
+                    <h5>HTML-4 Повезивање докумената</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_HTML_04_povezivanje_dokumenata/04a_povezivanje_dokumenata_citanje.html><div class="studioLecture" id=activity-04a_povezivanje_dokumenata_citanje><i class="fas fa-file-alt activity-icon"></i>Повезивање докумената</div></a>
+                <a href=../1_HTML_04_povezivanje_dokumenata/04b_povezivanje_dokumenata_pitanja.html><div class="studioLecture" id=activity-04b_povezivanje_dokumenata_pitanja><i class="far fa-question-circle activity-icon"></i>Повезивање докумената - питања</div></a>
+                <a href=../1_HTML_04_povezivanje_dokumenata/04c_povezivanje_dokumenata_zadaci.html><div class="studioLecture" id=activity-04c_povezivanje_dokumenata_zadaci><i class="fas fa-file-alt activity-icon"></i>Повезивање докумената - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_HTML_05_multimedijalni_sadrzaji>
+                    <h5>HTML-5 Мултимедијални садржаји</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_HTML_05_multimedijalni_sadrzaji/05a_multimedija_citanje.html><div class="studioLecture" id=activity-05a_multimedija_citanje><i class="fas fa-file-alt activity-icon"></i>Мултимедијални садржаји</div></a>
+                <a href=../1_HTML_05_multimedijalni_sadrzaji/05b_multimedija_pitanja.html><div class="studioLecture" id=activity-05b_multimedija_pitanja><i class="far fa-question-circle activity-icon"></i>Мултимедијални садржаји - питања</div></a>
+                <a href=../1_HTML_05_multimedijalni_sadrzaji/05c_multimedija_zadaci.html><div class="studioLecture" id=activity-05c_multimedija_zadaci><i class="fas fa-file-alt activity-icon"></i>Мултимедијални садржаји - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_CSS_01_CSS_stilovi>
+                    <h5>CSS-1 CSS стилови</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_CSS_01_CSS_stilovi/01a_css_stilovi_citanje.html><div class="studioLecture" id=activity-01a_css_stilovi_citanje><i class="fas fa-file-alt activity-icon"></i>CSS стилови</div></a>
+                <a href=../2_CSS_01_CSS_stilovi/01c_css_stilovi_vezbe.html><div class="studioLecture" id=activity-01c_css_stilovi_vezbe><i class="fas fa-file-alt activity-icon"></i>CSS стилови - вежбе</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_CSS_02_CSS_svojstva>
+                    <h5>CSS-2 CSS својства</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_CSS_02_CSS_svojstva/02a_css_svojstva_citanje.html><div class="studioLecture" id=activity-02a_css_svojstva_citanje><i class="fas fa-file-alt activity-icon"></i>CSS својства</div></a>
+                <a href=../2_CSS_02_CSS_svojstva/02b_css_svojstva_pitanja.html><div class="studioLecture" id=activity-02b_css_svojstva_pitanja><i class="far fa-question-circle activity-icon"></i>CSS својства - питања</div></a>
+                <a href=../2_CSS_02_CSS_svojstva/02c_css_svojstva_zadaci.html><div class="studioLecture" id=activity-02c_css_svojstva_zadaci><i class="fas fa-file-alt activity-icon"></i>CSS својства - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_CSS_03_CSS_selektori>
+                    <h5>CSS-3 CSS селектори</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_CSS_03_CSS_selektori/03a_css_selektori_citanje.html><div class="studioLecture" id=activity-03a_css_selektori_citanje><i class="fas fa-file-alt activity-icon"></i>CSS селектори</div></a>
+                <a href=../2_CSS_03_CSS_selektori/03b_css_selektori_pitanja.html><div class="studioLecture" id=activity-03b_css_selektori_pitanja><i class="far fa-question-circle activity-icon"></i>CSS селектори - питања</div></a>
+                <a href=../2_CSS_03_CSS_selektori/03c_css_selektori_zadaci.html><div class="studioLecture" id=activity-03c_css_selektori_zadaci><i class="fas fa-file-alt activity-icon"></i>CSS селектори - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_CSS_04_raspored_elemenata>
+                    <h5>CSS-4 Распоред елемената</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_CSS_04_raspored_elemenata/04a_raspored_elemenata_citanje.html><div class="studioLecture" id=activity-04a_raspored_elemenata_citanje><i class="fas fa-file-alt activity-icon"></i>Распоред елемената</div></a>
+                <a href=../2_CSS_04_raspored_elemenata/04b_raspored_elemenata_pitanja.html><div class="studioLecture" id=activity-04b_raspored_elemenata_pitanja><i class="far fa-question-circle activity-icon"></i>Распоред елемената - питања</div></a>
+                <a href=../2_CSS_04_raspored_elemenata/04c_raspored_elemenata_zadaci.html><div class="studioLecture" id=activity-04c_raspored_elemenata_zadaci><i class="fas fa-file-alt activity-icon"></i>Распоред елемената - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_Bootstrap_01_biblioteka>
+                    <h5>B-1 Bootstrap библиотека</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_Bootstrap_01_biblioteka/01a_bootstrap_biblioteka_citanje.html><div class="studioLecture" id=activity-01a_bootstrap_biblioteka_citanje><i class="fas fa-file-alt activity-icon"></i>Bootstrap библиотека</div></a>
+                <a href=../3_Bootstrap_01_biblioteka/01b_bootstrap_biblioteka_pitanja.html><div class="studioLecture" id=activity-01b_bootstrap_biblioteka_pitanja><i class="far fa-question-circle activity-icon"></i>Bootstrap библиотека - питања</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_Bootstrap_02_raspored>
+                    <h5>B-2 Bootstrap и распоређивање елемената</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_Bootstrap_02_raspored/02a_bootstrap_raspored_citanje.html><div class="studioLecture" id=activity-02a_bootstrap_raspored_citanje><i class="fas fa-file-alt activity-icon"></i>Bootstrap и распоређивање елемената</div></a>
+                <a href=../3_Bootstrap_02_raspored/02b_bootstrap_raspored_pitanja.html><div class="studioLecture" id=activity-02b_bootstrap_raspored_pitanja><i class="far fa-question-circle activity-icon"></i>Bootstrap и распоређивање елемената - питања</div></a>
+                <a href=../3_Bootstrap_02_raspored/02c_bootstrap_raspored_zadaci.html><div class="studioLecture" id=activity-02c_bootstrap_raspored_zadaci><i class="fas fa-file-alt activity-icon"></i>Bootstrap и распоређивање елемената - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_Bootstrap_03_klase>
+                    <h5>B-3 Bootstrap класе</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_Bootstrap_03_klase/03a_bootstrap_klase_citanje.html><div class="studioLecture" id=activity-03a_bootstrap_klase_citanje><i class="fas fa-file-alt activity-icon"></i>Bootstrap класе</div></a>
+                <a href=../3_Bootstrap_03_klase/03b_bootstrap_klase_pitanja.html><div class="studioLecture" id=activity-03b_bootstrap_klase_pitanja><i class="far fa-question-circle activity-icon"></i>Bootstrap класе - питања</div></a>
+                <a href=../3_Bootstrap_03_klase/03c_bootstrap_klase_zadaci.html><div class="studioLecture" id=activity-03c_bootstrap_klase_zadaci><i class="fas fa-file-alt activity-icon"></i>Bootstrap класе - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_Bootstrap_04_komponente>
+                    <h5>B-4 Bootstrap подршка компонентама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_Bootstrap_04_komponente/04a_bootstrap_komponente_citanje.html><div class="studioLecture" id=activity-04a_bootstrap_komponente_citanje><i class="fas fa-file-alt activity-icon"></i>Bootstrap подршка компонентама</div></a>
+                <a href=../3_Bootstrap_04_komponente/04b_bootstrap_komponente_pitanja.html><div class="studioLecture" id=activity-04b_bootstrap_komponente_pitanja><i class="far fa-question-circle activity-icon"></i>Bootstrap компоненте - питања</div></a>
+                <a href=../3_Bootstrap_04_komponente/04c_bootstrap_komponente_zadaci.html><div class="studioLecture" id=activity-04c_bootstrap_komponente_zadaci><i class="fas fa-file-alt activity-icon"></i>Bootstrap компоненте - задаци</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="bootstrap">
+<h1>Bootstrap подршка компонентама<a class="headerlink" href="#bootstrap" title="Permalink to this headline">¶</a></h1>
+<p>Погодним стилизовањем и распоређивањем већ познатих <em>HTML</em> елемената можемо да градимо сложеније функционалне целине, као што су табови, менији, галерије слика, картице, формулари и слично. Такве функционалне целине се често и визуелно издвајају на веб странама и лако се уочавају. Ове визуелне и функционалне целине називамо <strong>компонентама</strong> на веб страни.</p>
+<p>Компоненте могу бити:</p>
+<ul class="simple">
+<li><p>Основне компоненте, које представљају стандардне <em>HTML</em> елементе као што су поља за унос, листе или табеле.</p></li>
+<li><p>Сложене компоненте, које градимо користећи једну или више једноставнијих компоненти. Груписањем компоненти на неки од уобичајених начина добијамо поменуте често коришћене конструкције (табови, менији, галерије слика, картице…).</p></li>
+</ul>
+<p>Једна од највећих вредности <em>Bootstrap</em> библиотеке је могућност једноставног стилизовања и мењања стила често коришћених компоненти, што смо већ имали прилике да видимо. Када желите да упознате ефекте појединих стилова основних компоненти као што су табеле или поља за унос, треба само да пронађете стил који вас интересује, копирате пример <em>HTML</em> кода и ставите га у своју страну. Ако вам стил одговара и желите да га употребите, у великом броју случајева ће бити довољно само да промените садржај у компоненти.</p>
+<p>Поред конзистентног стилизовања основних компоненти, у <em>Bootstrap</em> библиотеци можемо наћи неке врло корисне стилове за формирање сложених компоненти. У наставку ће бити описане неке од сложених компоненти које можемо једноставно дизајнирати помоћу ове библиотеке.</p>
+<div class="section" id="id1">
+<h2>Навигационе траке<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Навигационе траке (<em>Navbar</em>, скраћено од енгл. <em>navigation bar</em>) су компоненте које се налазе на врху стране и садрже меније, логое и поља за претрагу која се виде на многим веб странама.</p>
+<p>Пример навигационе компоненте дат је следећим <em>HTML</em> кôдом:</p>
+
+<div data-childcomponent="bootstrap_navbar" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=bootstrap_navbar data-lang="htmlmixed" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Bootstrap навигациона трака&lt;/title&gt;
+        &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;nav class=&quot;navbar bg-light&quot;&gt;
+            &lt;a href=&quot;https://petlja.org&quot; class=&quot;navbar-brand&quot;&gt;Лого&lt;/a&gt;
+
+            &lt;ul class=&quot;navbar-nav flex-row&quot;&gt;
+                &lt;li class=&quot;nav-item mx-1&quot;&gt;
+                    &lt;a href=&quot;https://petlja.org&quot; class=&quot;nav-link&quot;&gt;Линк 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item mx-1&quot;&gt;
+                    &lt;a href=&quot;https://petlja.org&quot; class=&quot;nav-link&quot;&gt;Линк 2&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</div>
+<p>Из примера видимо да је навигациона линија <em>HTML</em> елемент који се зове <code class="docutils literal notranslate"><span class="pre">&lt;nav&gt;</span></code>, а са којим смо се упознали у секцији о распореду елемената. Да би <code class="docutils literal notranslate"><span class="pre">&lt;nav&gt;</span></code> елемент изгледао као навигациона линија са слике, потребно је доделити му класу <code class="docutils literal notranslate"><span class="pre">navbar</span></code>. Класа <code class="docutils literal notranslate"><span class="pre">bg-light</span></code> додаје позадинску боју и можете пробати у примеру како би изгледало са класaма <code class="docutils literal notranslate"><span class="pre">navbar-dark</span> <span class="pre">bg-dark</span></code>.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p><strong>Вежба</strong></p>
+<p>Прочитајте више о навигционим тракама на веб-страни <a class="reference external" href="https://getbootstrap.com/docs/5.2/components/navbar/">Bootstrap Navbar</a>.</p>
+<p>Измените претходни пример да прикаже петљин лого уместо текста „Лого“.</p>
+
+    </p></div></div>
+</div>
+<div class="section" id="id3">
+<h2>Страничење<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Страничење (енгл. <em>pagination</em>) је често коришћена компонента која се ставља на странама где се не приказују сви резултати, него је потребно преласком на следећу страну приказати нови скуп резултата. Пример једне компоненте за страничење која омогућава да се преће на претходну или следећу страну или да се директно пређе на прву, другу или трећу страну је приказана је следећим примером:</p>
+
+<div data-childcomponent="bootstrap_stranicenje" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=bootstrap_stranicenje data-lang="htmlmixed" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Bootstrap страничење&lt;/title&gt;
+        &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;nav aria-label=&quot;Пример страничења&quot;&gt;
+          &lt;ul class=&quot;pagination&quot;&gt;
+            &lt;li class=&quot;page-item disabled&quot;&gt;
+                &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;претходна&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;page-item active&quot;&gt;
+                &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;page-item&quot;&gt;
+                &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;page-item&quot;&gt;
+                &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;6&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;page-item&quot;&gt;
+                &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;следећа&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</div>
+<p>Као што видимо, у <em>HTML</em> треба у <code class="docutils literal notranslate"><span class="pre">&lt;nav&gt;</span></code> елемент поставити листу <code class="docutils literal notranslate"><span class="pre">&lt;ul&gt;</span></code> и додати одговарајуће <em>CSS</em> класе као што су <code class="docutils literal notranslate"><span class="pre">pagination</span></code> и <code class="docutils literal notranslate"><span class="pre">page-item</span></code>, чиме се добија стилизована контрола за страничење резултата.</p>
+<p>Додељивањем класа <code class="docutils literal notranslate"><span class="pre">disabled</span></code> и <code class="docutils literal notranslate"><span class="pre">active</span></code> стилизују се везе да изгледају онемогућено или активно.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p><strong>Вежба</strong></p>
+<p>Прочитајте више о страничењу на веб-страни <a class="reference external" href="https://getbootstrap.com/docs/5.2/components/pagination/">Bootstrap - Pagination</a>.</p>
+<p>Измените горњи пример тако да:</p>
+<ul class="simple">
+<li><p>компонента буде умањена,</p></li>
+<li><p>текст за претходну или следећу страну замените иконама <code class="docutils literal notranslate"><span class="pre">«</span></code> и <code class="docutils literal notranslate"><span class="pre">»</span></code>.</p></li>
+</ul>
+
+    </p></div></div>
+</div>
+<div class="section" id="id4">
+<h2>Картице<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Картице (енгл. <em>Cards</em>) су компоненте помоћу којих издвајамо независне целине у садржају. Често је главна функционалност картице да омогући везу ка другој веб страни. При томе, за разлику од обичног линка, картица може да садржи више елемената, као што су наслов, слика, краћи текст о страни на коју упућује, дугме које води ка тој страни итд.</p>
+<p><em>HTML</em> кôд компоненте картице је приказан у следећем примеру:</p>
+
+<div data-childcomponent="bootstrap_kartice" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=bootstrap_kartice data-lang="htmlmixed" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Bootstrap картица&lt;/title&gt;
+        &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;card&quot; style=&quot;width: 200px;&quot;&gt;
+            &lt;img src=&quot;https://petlja.org/images/petlja-logo-bt.svg&quot; class=&quot;card-img-top p-2&quot; alt=&quot;Текст за приказ уместо слике на врху картице&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+              &lt;h5 class=&quot;card-title&quot;&gt;Наслов картице&lt;/h5&gt;
+              &lt;p class=&quot;card-text&quot;&gt;Текст који ће бити приказан у оквиру картице.&lt;/p&gt;
+              &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Дугме на дну картице&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</div>
+<p>Из датог примера видимо како можемо да направимо картицу: у један <code class="docutils literal notranslate"><span class="pre">&lt;div&gt;</span></code> блок постављамо <em>HTML</em> елементе за наслов (таг <code class="docutils literal notranslate"><span class="pre">&lt;h5&gt;</span></code>), пасус текста (таг <code class="docutils literal notranslate"><span class="pre">&lt;p&gt;</span></code>) и линк (таг <code class="docutils literal notranslate"><span class="pre">&lt;а&gt;</span></code>), уз одговарајуће <em>CSS</em> класе. У овом примеру, линк је помоћу класе <code class="docutils literal notranslate"><span class="pre">btn</span> <span class="pre">btn-primary</span></code> стилизован као дугме.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p><strong>Вежба</strong></p>
+<p>Прочитајте више о картицама на веб-страни <a class="reference external" href="https://getbootstrap.com/docs/5.2/components/card/">Bootstrap Cards</a>.</p>
+<p>Замените дугме на дну картице са два линка:</p>
+<ul class="simple">
+<li><p>Линк „Такмичење“ који везује ка Петљиној веб-страни која се налази на локацији <a class="reference external" href="https://petlja.org/takmicenja">https://petlja.org/takmicenja</a>,</p></li>
+<li><p>Линк „Форум“ који везује ка Петљиној веб-страни која се налази на локацији <a class="reference external" href="https://petlja.org/zbornica">https://petlja.org/zbornica</a>.</p></li>
+</ul>
+
+    </p></div></div>
+</div>
+<div class="section" id="id5">
+<h2>Дијалози<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Једна од најчешће коришћених компоненти у веб-апликацијама је дијалог који приказује формулар или текст. Дијалог се приказује преко осталих компоненти, док је остатак стране затамњен и неактиван.</p>
+<a class="reference internal image-reference" href="../_images/dijalog.png"><img alt="../_images/dijalog.png" class="align-center" src="../_images/dijalog.png" style="width: 600px;" /></a>
+<p>Уз помоћ <em>Bootstrap</em> библиотеке се дијалог и дугме које га отвара лако имплементирају у <em>HTML</em> кôду у неколико корака.</p>
+<p>Дугмету које отвара дијалог потребно је доделити:</p>
+<ul class="simple">
+<li><p>атрибут <code class="docutils literal notranslate"><span class="pre">data-bs-toggle</span></code> са вредношћу <code class="docutils literal notranslate"><span class="pre">modal</span></code>,</p></li>
+<li><p>атрибут <code class="docutils literal notranslate"><span class="pre">data-bs-target</span></code> са вредношћу идентификатора дијалога.</p></li>
+</ul>
+<p>Потом је у наставку потребно додати <em>HTML</em> кôд којим се представља садржај дијалога који ће бити приказан када се притисне дугме. Овај елемент мора да има вредност идентификатора која се слаже са вредношћу из атрибута <code class="docutils literal notranslate"><span class="pre">data-bs-target</span></code> дугмета које покреће дијалог.</p>
+
+<div data-childcomponent="bootstrap_modal" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=bootstrap_modal data-lang="htmlmixed" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Bootstrap дијалог&lt;/title&gt;
+        &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot;&gt;
+        &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Дугме које ће отворити модални диалог --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;
+                data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#ПримерМодалногДијалога&quot;&gt;
+          Обриши ставку
+        &lt;/button&gt;
+        &lt;p&gt;Остали садржај стране&lt;/p&gt;
+
+        &lt;!-- Структура модалног дијалога --&gt;
+        &lt;div class=&quot;modal fade&quot; id=&quot;ПримерМодалногДијалога&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+          &lt;div class=&quot;modal-dialog&quot;&gt;
+            &lt;div class=&quot;modal-content&quot;&gt;
+              &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;h5 class=&quot;modal-title&quot; id=&quot;ПримерОзнакеНаслова&quot;&gt;Обриши ставку&lt;/h5&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;modal-body&quot;&gt;
+                Да ли сте сигурни да желите да обришете ставку?
+              &lt;/div&gt;
+              &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-dismiss=&quot;modal&quot;&gt;Не&lt;/button&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Потврди брисање&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</div>
+<p>У <code class="docutils literal notranslate"><span class="pre">&lt;div&gt;</span></code> блок који представља садржај дијалога се могу додати различити елементи којима ће се направити бољи изглед дијалога. На пример, ако се дода <code class="docutils literal notranslate"><span class="pre">&lt;div&gt;</span></code> са класом <code class="docutils literal notranslate"><span class="pre">modal-header</span></code>, садржај у њему ће се приказати као заглавље унутар дијалога. Садржај у  <code class="docutils literal notranslate"><span class="pre">&lt;div&gt;</span></code> блоку са класом <code class="docutils literal notranslate"><span class="pre">modal-footer</span></code> ће се приказати на дну дијалога. На овај начин се веома лако може направити изглед дијалога који вам је потребан.</p>
+<p>Више о дијалозима можете прочитати на веб-страни <a class="reference external" href="https://getbootstrap.com/docs/5.2/components/modal/">Bootstrap Modal</a>.</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            <p>
+<p>У претходним примерима нисмо укључивали <em>Bootstrap JavaScript</em> библиотеку јер смо користили само <em>CSS</em> класе.</p>
+<p>Дијалог захтева укључивање <em>Bootstrap JavaScript</em> библотеке да би атрибути <code class="docutils literal notranslate"><span class="pre">data-bs-toggle</span></code> и <code class="docutils literal notranslate"><span class="pre">data-bs-target</span></code> били повезани.</p>
+
+    </p></div></div>
+</div>
+<div class="section" id="id7">
+<h2>Закључак<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>У овој лекцији сте могли да видите неколико уграђених компоненти и кôд који треба да ставите у страну како би те компоненте биле приказане. Могућност да једноставно ископирате компоненте и слажете их у веб-страну су једна од највећих олакшица у библиотеци <em>Bootstrap</em>.</p>
+<p>Компоненте приказане у лекцијама су само део <em>Bootstrap</em> библиотеке. На <a class="reference external" href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap веб-страни</a> прођите кроз све компоненте које су део библиотеке, пошто ће вам користити да знате да нека компонента постоји у случају да приметите да вам је потребна на веб-страни.</p>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>
