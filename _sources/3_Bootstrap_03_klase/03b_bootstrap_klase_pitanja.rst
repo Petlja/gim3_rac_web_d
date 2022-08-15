@@ -1,4 +1,4 @@
-Bootstrap класе - питања
+Bootstrap класе – питања
 ========================
 
 .. mchoice:: bootstrap_klase_q1

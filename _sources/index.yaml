@@ -258,7 +258,7 @@ lessons:
         file: 01a_bootstrap_biblioteka_citanje.rst
         guid: aeb77edc-4597-42c0-87d5-40bca03194ae
       - type: quiz
-        title: Bootstrap библиотека - питања
+        title: Bootstrap библиотека – питања
         file: 01b_bootstrap_biblioteka_pitanja.rst
         guid: 47040b4a-683e-4c3c-8b9b-6fdde40e24b7
   - title: B-2 Bootstrap и распоређивање елемената
@@ -271,11 +271,11 @@ lessons:
         file: 02a_bootstrap_raspored_citanje.rst
         guid: 70238755-9f7f-4ea4-a55e-cad8a4b2e116
       - type: quiz
-        title: Bootstrap и распоређивање елемената - питања
+        title: Bootstrap и распоређивање елемената – питања
         file: 02b_bootstrap_raspored_pitanja.rst
         guid: aa115c67-261b-4a4a-a30e-bab25124ad66
       - type: reading ### zadaci
-        title: Bootstrap и распоређивање елемената - задаци
+        title: Bootstrap и распоређивање елемената – задаци
         file: 02c_bootstrap_raspored_zadaci.rst
         guid: dbec1597-0a5a-4ecf-9ab9-b4f6f083ab86
   - title: B-3 Bootstrap класе
@@ -288,11 +288,11 @@ lessons:
         file: 03a_bootstrap_klase_citanje.rst
         guid: da466efb-0036-41cb-9717-e3f1b105e0db
       - type: quiz
-        title: Bootstrap класе - питања
+        title: Bootstrap класе – питања
         file: 03b_bootstrap_klase_pitanja.rst
         guid: b14d7ad4-81f1-45b5-873b-34b66aed6446
       - type: reading ### zadaci
-        title: Bootstrap класе - задаци
+        title: Bootstrap класе – задаци
         file: 03c_bootstrap_klase_zadaci.rst
         guid: efcea516-370b-422e-a342-93942bd64719
   - title: B-4 Bootstrap подршка компонентама
@@ -305,10 +305,10 @@ lessons:
         file: 04a_bootstrap_komponente_citanje.rst
         guid: e74d98c2-1bd9-4260-8d62-143bd9ab8aa2
       - type: quiz
-        title: Bootstrap компоненте - питања
+        title: Bootstrap компоненте – питања
         file: 04b_bootstrap_komponente_pitanja.rst
         guid: 45e9e3d8-37fb-4f3b-8926-5e0972422dbd
       - type: reading ### zadaci
-        title: Bootstrap компоненте - задаци
+        title: Bootstrap компоненте – задаци
         file: 04c_bootstrap_komponente_zadaci.rst
         guid: 381b9c53-4816-42ec-9023-b61701b8cd66

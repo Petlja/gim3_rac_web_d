@@ -1,4 +1,4 @@
-Bootstrap класе - задаци
+Bootstrap класе – задаци
 ========================
 
 .. questionnote::
