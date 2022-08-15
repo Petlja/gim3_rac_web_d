@@ -371,7 +371,7 @@ lessons:
     file: 01b_bootstrap_biblioteka_pitanja.html
     guid: 47040b4a-683e-4c3c-8b9b-6fdde40e24b7
     src: 01b_bootstrap_biblioteka_pitanja.rst
-    title: Bootstrap библиотека - питања
+    title: Bootstrap библиотека – питања
     type: quiz
   archived-activities: []
   description: Bootstrap библиотека
@@ -390,13 +390,13 @@ lessons:
     file: 02b_bootstrap_raspored_pitanja.html
     guid: aa115c67-261b-4a4a-a30e-bab25124ad66
     src: 02b_bootstrap_raspored_pitanja.rst
-    title: Bootstrap и распоређивање елемената - питања
+    title: Bootstrap и распоређивање елемената – питања
     type: quiz
   - description: ''
     file: 02c_bootstrap_raspored_zadaci.html
     guid: dbec1597-0a5a-4ecf-9ab9-b4f6f083ab86
     src: 02c_bootstrap_raspored_zadaci.rst
-    title: Bootstrap и распоређивање елемената - задаци
+    title: Bootstrap и распоређивање елемената – задаци
     type: reading
   archived-activities: []
   description: Распоред елемената помоћу *Twitter Bootstrap* библиотеке
@@ -415,13 +415,13 @@ lessons:
     file: 03b_bootstrap_klase_pitanja.html
     guid: b14d7ad4-81f1-45b5-873b-34b66aed6446
     src: 03b_bootstrap_klase_pitanja.rst
-    title: Bootstrap класе - питања
+    title: Bootstrap класе – питања
     type: quiz
   - description: ''
     file: 03c_bootstrap_klase_zadaci.html
     guid: efcea516-370b-422e-a342-93942bd64719
     src: 03c_bootstrap_klase_zadaci.rst
-    title: Bootstrap класе - задаци
+    title: Bootstrap класе – задаци
     type: reading
   archived-activities: []
   description: Bootstrap класе
@@ -440,13 +440,13 @@ lessons:
     file: 04b_bootstrap_komponente_pitanja.html
     guid: 45e9e3d8-37fb-4f3b-8926-5e0972422dbd
     src: 04b_bootstrap_komponente_pitanja.rst
-    title: Bootstrap компоненте - питања
+    title: Bootstrap компоненте – питања
     type: quiz
   - description: ''
     file: 04c_bootstrap_komponente_zadaci.html
     guid: 381b9c53-4816-42ec-9023-b61701b8cd66
     src: 04c_bootstrap_komponente_zadaci.rst
-    title: Bootstrap компоненте - задаци
+    title: Bootstrap компоненте – задаци
     type: reading
   archived-activities: []
   description: Bootstrap компоненте
