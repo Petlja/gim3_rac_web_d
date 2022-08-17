@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -450,20 +414,32 @@
     
   <div class="section" id="id1">
 <h1>Готова решења за веб дизајн<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Веб прегледачем (браузером) отварамо и прегледамо веб странице које се могу налазити на нашем, или неком удаљеном рачунару. Без обзира на то где се налазе, веб странице су у суштини текстуални фајлови, писани на језицима за опис изгледа и садржаја веб страна. То значи да се веб страна, па и цео веб сајт могу направити помоћу обичног едитора текста, писањем одговарајућег кода. Да бисмо у веб страну убацили слику или видео, довољно је да у поменути текст додамо кôд за убацивање слике, односно видеа, са путањом до фајла који ту слику или видео садржи. Оваквим начином прављења веб страна ћемо се бавити у наредним поглављима овог курса.</p>
-<p>Осим поменутог начина, који подразумева познавање основа језика <em>HTML</em> и <em>CSS</em>, сајтове можемо да правимо и у окружењима намењеним за израду сајтова. Оваква окружења се називају <em>системи за управљање садржајем</em> (енгл. <em>content management system</em>, скраћено <em>CMS</em>). <em>CMS</em> системи омогућавају корисницима да кроз меније и друге облике корисничког интерфејса попуне и обликују свој сајт.</p>
-<p>Многа <em>CMS</em> решења су бесплатна и слободно су доступна преко интернета, што омогућава корисницима да креирају своје сајтове без инсталирања било каквог софтвера на свој рачунар (довољан је било који веб прегледач). Честа је пракса да <em>CMS</em> системи нуде својим корисницима и бесплатно хостовање направљених веб-сајтова на својим серверима. Ипак, неке услуге за напредније кориснике посебно се наплаћују (на пример, хостовање већих веб-сајтова или комплекснији и лепше стилизовани темплејти веб-страна).</p>
-<p>Неки од најпознатијих <em>CMS</em> система данас су <em>WordPress</em>, <em>Joomla</em>, <em>Drupal</em>, <em>Weebly</em> и <em>Google Sites</em>. Највише коришћен међу њима је <em>WordPress</em>, који се може похвалити чињеницом да је тренутно преко 28% свих сајтова на интернету направљено уз његову помоћ. Таква масовна употреба <em>CMS</em> система није изненађење, јер они омогућавају прављење сајтова и оним корисницима који не познају веб технологије, односно језике на којима се веб стране пишу. Пошто се <em>CMS</em> системи ослањају на избор готових образаца (темплејта), креирање сајтова помоћу <em>CMS</em> система може да буде и знатно брже него када их правимо ручно.</p>
-<p>Са друге стране, за прављење сложенијих веб-сајтова, а нарочито за накнадно уношење разних измена (одржавање сајта), неопходно је детаљно познавање интерфејса <em>CMS</em> система, па и делимично познавање њихове унутрашње архитектуре и дизајна, односно начина на који овакви системи функционишу. Због тога корисницима <em>CMS</em> система који добро познају језике <em>HTML</em> и <em>CSS</em> може бити лакше и брже да уређују и дорађују веб сајт директним мењањем изворног кода, него преко компликованог веб интерејса.</p>
+<p>Веб-прегледачем (енгл. <em>browser</em>) отварамо и прегледамо веб-странице које се могу налазити на нашем, или неком удаљеном рачунару. Без обзира на то где се налазе, веб-странице су у текстуални фајлови писани на језицима за опис изгледа и садржаја веб-страна. То значи да се веб-страна, па и цео веб-сајт могу направити помоћу едитора текста. Да бисмо у веб-страну додали слику или видео потребно је да у поменути текст додамо кôд за убацивање слике, односно видеа, са путањом до фајла који ту слику или видео садржи. Оваквим начином прављења веб-страна ћемо се бавити у наредним поглављима овог курса.</p>
+<div class="section" id="id2">
+<h2>Системи за управљање садржајем<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Постоје системи који се називају <em>системи за управљање садржајем</em> (енгл. <em>content management system</em>, скраћено <em>CMS</em>). <em>CMS</em> системи омогућавају корисницима да кроз меније и друге облике корисничког интерфејса попуне и обликују свој сајт.</p>
+<p>Многа <em>CMS</em> решења су бесплатна и слободно су доступна преко интернета, што омогућава корисницима да креирају своје сајтове без инсталирања софтвера на свој рачунар. Честа је пракса да <em>CMS</em> системи нуде својим корисницима бесплатно хостовање направљених веб-сајтова на својим серверима. Ипак, неке услуге за напредније кориснике посебно се наплаћују (на пример, хостовање већих веб-сајтова или комплекснији и лепше стилизовани обрасци веб-страна).</p>
+<p>Неки од најпознатијих <em>CMS</em> система данас су <em>WordPress</em>, <em>Shopify</em>,  <em>Joomla</em>, <em>Squarespace</em>, <em>Wix</em> и <em>Drupal</em>. Највише коришћен међу њима је <em>WordPress</em> који се може похвалити чињеницом да је тренутно преко 40% свих сајтова на интернету направљено користећи WordPress. Таква масовна употреба <em>CMS</em> система није изненађење, јер они омогућавају прављење веб-сајтова корисницима који не познају веб-технологије, односно језике на којима се веб-стране пишу. Пошто се <em>CMS</em> системи ослањају на избор готових образаца (енгл. <em>template</em>), креирање сајтова помоћу <em>CMS</em> система може да буде и знатно брже него када их правимо ручно.</p>
+<p>Са друге стране, за прављење сложенијих веб-сајтова, а нарочито за накнадно уношење разних измена (одржавање сајта), неопходно је детаљно познавање интерфејса <em>CMS</em> система, па и делимично познавање њихове унутрашње архитектуре и дизајна, односно начина на који овакви системи функционишу. Због тога корисницима <em>CMS</em> система који добро познају језике <em>HTML</em> и <em>CSS</em> може бити лакше и брже да уређују и дорађују веб-сајт директним мењањем изворног кôда, него преко компликованог веб интерејса.</p>
+</div>
 <div class="section" id="wordpress">
 <h2>Систем <em>WordPress</em><a class="headerlink" href="#wordpress" title="Permalink to this headline">¶</a></h2>
-<p>CMS систем <em>WordPress</em> слободан је софтвер отвореног кода који служи за креирање блогова и веб-сајтова. Постоје два основна начина коришћења система <em>WordPress</em>.</p>
+<p>CMS систем <em>WordPress</em> слободан је софтвер отвореног кôда који служи за креирање блогова и веб-сајтова. Постоје два основна начина коришћења система <em>WordPress</em>:</p>
 <ul class="simple">
-<li><p>Један начин је да на рачунар инсталирамо све што је потребно да би тај рачунар постао веб сервер. Сам систем <em>WordPress</em> се може преузети са сајта <a class="reference external" href="WordPress.org">WordPress.org</a> . Осим тога, потребан је и систем за управљање базом података <em>MySQL</em>, као и интерпретер за серверски језик <em>PHP</em>, јер <em>WordPress</em> користи ове технологије у свом раду. Након што подигнемо веб сервер, потребно је на одговарајућем месту распаковати преузету <em>WordPress</em> архиву, креирати пратећу базу података за наш сајт и конфигурисати систем.</p></li>
-<li><p>Други начин је да се региструјемо на сајту <a class="reference external" href="WordPress.com">WordPress.com</a> или неком сличном. Сајтове <cite>WordPress.org</cite> и <cite>WordPress.com</cite> не треба мешати: први служи за дистрибуирање софтвера <cite>WordPress</cite>, док је други власништво одвојене компаније, и један је од многих сајтова који се баве хостовањем блогова и веб-сајтова заснованих на платформи <cite>WordPress</cite>. Приликом регистрације на <em>WordPress.com</em> и другим сличним сајтовима, корисници могу да изаберу или бесплатну услугу с основним пакетом могућности, или бројне додатне услуге уз одређену надокнаду (на пример, богатији скуп тема које одређују визуелни идентитет веб-сајта или уклањање реклама, које су неизбежне код бесплатних веб-сајтова).</p></li>
+<li><p>На наш рачунар можемо да инсталирамо <em>WordPress</em>. Сам систем <em>WordPress</em> се може преузети са сајта <a class="reference external" href="https://wordpress.org">WordPress.org</a>. За покретање <em>WordPress</em> кôда потребан је и систем за управљање базом података <em>MySQL</em>, као и интерпретер за серверски језик <em>PHP</em>.</p></li>
+<li><p>Региструјемо се на веб-сајту <a class="reference external" href="https://wordpress.com">WordPress.com</a>. Приликом регистрације на <em>WordPress.com</em> и другим сличним сајтовима корисници могу да изаберу или бесплатну услугу са основним пакетом могућности, или бројне додатне услуге уз одређену надокнаду (на пример, богатији скуп тема које одређују визуелни идентитет веб-сајта или уклањање реклама, које су неизбежне код бесплатних веб-сајтова).</p></li>
 </ul>
-<p>Сваки од ова два начина коришћења система <em>WordPress</em> има своје предности и мане. Очигледне предности коришћења готовог веб сервера компаније <cite>WordPress.com</cite> су те да регистровани корисник не мора да брине о свом веб серверу, инсталирању, конфигурисању и одржавању система (прављење резервних копија, прелазак на нове верзије софтвера и слично), што поред времена захтева и одређено техничко знање. Мана таквог избора је да корисник веб-сајта <cite>WordPress.com</cite> нема све могућности које су му на располагању када користи инсталацију система WordPress на свом веб-серверу. На пример, из безбедносних разлога не могу се инсталирати напреднији прикључци (<em>plugins</em>), није дозвољен приступ изворном коду система, па се изворни кôд не може директно мењати, прилагођавати и слично.</p>
-<p>У наставку ће бити описан поступак креирања и одржавања веб-сајта коришћењем услуга компаније WordPress.com (поступак креирања и одржавања WordPress веб-сајта на свом веб-серверу је сличан томе, мада мало захтевнији).</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            <p>
+<p>Сајтове <cite>WordPress.org</cite> и <cite>WordPress.com</cite> не треба мешати: први служи за дистрибуирање софтвера <em>WordPress</em>, док је други власништво одвојене компаније, и један је од многих сајтова који се баве хостовањем блогова и веб-сајтова заснованих на платформи <em>WordPress</em>.</p>
+
+    </p></div></div>
+<p>Сваки од ова два начина коришћења система <em>WordPress</em> има своје предности и мане. Очигледне предности коришћења готовог веб сервера компаније <cite>WordPress.com</cite> су те да регистровани корисник не мора да брине о свом веб серверу, инсталирању, конфигурисању и одржавању система (прављење резервних копија, прелазак на нове верзије софтвера и слично), што поред времена захтева и одређено техничко знање. Мана таквог избора је да корисник веб-сајта <cite>WordPress.com</cite> нема све могућности које су му на располагању када користи инсталацију система <em>WordPress</em> на свом веб-серверу. На пример, из безбедносних разлога не могу се инсталирати напреднији прикључци (<em>plugins</em>), није дозвољен приступ изворном кôду система, па се изворни кôд не може директно мењати, прилагођавати и слично.</p>
+<p>У наставку ће бити описан поступак креирања и одржавања веб-сајта коришћењем услуга компаније <em>WordPress.com</em>. Поступак креирања и одржавања <em>WordPress</em> веб-сајта на свом веб-серверу је сличан томе, мада мало захтевнији.</p>
 </div>
 </div>
 

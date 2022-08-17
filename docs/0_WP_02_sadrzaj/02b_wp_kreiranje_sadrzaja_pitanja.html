@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -459,7 +423,7 @@
             
             <li data-component="answer"  id="wp_sadrzaj_q1_opt_b">Икона која представља цео сајт.</li><li data-component="feedback" id="wp_sadrzaj_q1_opt_b">Не.</li>
             
-            <li data-component="answer" data-correct id="wp_sadrzaj_q1_opt_c">Слика која представља објаву или веб страну у одговарајућој листи.</li><li data-component="feedback" id="wp_sadrzaj_q1_opt_c">Тачно!</li>
+            <li data-component="answer" data-correct id="wp_sadrzaj_q1_opt_c">Слика која представља објаву или веб-страну у одговарајућој листи.</li><li data-component="feedback" id="wp_sadrzaj_q1_opt_c">Тачно!</li>
             
 
             </ul>
@@ -467,7 +431,7 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="wp_sadrzaj_q2">
-            <p>Q-7: Како се у систему <em>WordPress</em> форматира текст који унесемо у објаву или на веб страну?</p>
+            <p>Q-7: Како се у систему <em>WordPress</em> форматира текст који унесемо у објаву или на веб-страну?</p>
 
             <li data-component="answer"  id="wp_sadrzaj_q2_opt_a">Искључиво визуелним уређивањем (текст се при форматирању одмах види подебљан, увећан и слично).</li><li data-component="feedback" id="wp_sadrzaj_q2_opt_a">Не.</li>
             
@@ -495,9 +459,9 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="wp_sadrzaj_q4">
-            <p>Q-9: Који је једини начин којим је УВЕК могуће доћи до сваке веб стране коју направимо на сајту помоћу система <em>WordPress</em>?</p>
+            <p>Q-9: Који је једини начин којим је <strong>увек</strong> могуће доћи до сваке веб-стране коју направимо на сајту помоћу система <em>WordPress</em>?</p>
 
-            <li data-component="answer" data-correct id="wp_sadrzaj_q4_opt_a">Уношењем фиксне адресе те стране у траку за адресу у веб прегледачу.</li><li data-component="feedback" id="wp_sadrzaj_q4_opt_a">Тачно!</li>
+            <li data-component="answer" data-correct id="wp_sadrzaj_q4_opt_a">Уношењем фиксне адресе те стране у траку за адресу у веб-прегледачу.</li><li data-component="feedback" id="wp_sadrzaj_q4_opt_a">Тачно!</li>
             
             <li data-component="answer"  id="wp_sadrzaj_q4_opt_b">Са почетне стране сајта помоћу главног менија.</li><li data-component="feedback" id="wp_sadrzaj_q4_opt_b">Не.</li>
             
@@ -511,13 +475,13 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="wp_sadrzaj_q5">
-            <p>Q-10: Како се у систему <em>WordPress</em> задаје адреса (<em>URL</em>) веб стране коју смо направили?</p>
+            <p>Q-10: Како се у систему <em>WordPress</em> задаје адреса (<em>URL</em>) веб-стране коју смо направили?</p>
 
             <li data-component="answer" data-correct id="wp_sadrzaj_q5_opt_a">Додавањем наставка дефинисаног за ту страну на адресу родитељске стране.</li><li data-component="feedback" id="wp_sadrzaj_q5_opt_a">Тачно!</li>
             
             <li data-component="answer"  id="wp_sadrzaj_q5_opt_b">Стављањем везе ка тој страни у мени.</li><li data-component="feedback" id="wp_sadrzaj_q5_opt_b">Не.</li>
             
-            <li data-component="answer"  id="wp_sadrzaj_q5_opt_c">Новододате стране немају директне фиксне адресе</li><li data-component="feedback" id="wp_sadrzaj_q5_opt_c">Не.</li>
+            <li data-component="answer"  id="wp_sadrzaj_q5_opt_c">Нове стране немају директне фиксне адресе.</li><li data-component="feedback" id="wp_sadrzaj_q5_opt_c">Не.</li>
             
 
             </ul>
