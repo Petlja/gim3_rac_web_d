@@ -5,9 +5,10 @@ Bootstrap класе
 
 Поред основних стилова, `Bootstrap` обезбеђује унапред дефинисане *CSS* класе, чији стилови се могу додатно применити на *HTML* елементе. Ове класе примењујемо тако што имена *CSS* класа додамо у атрибуте ``class`` оних *HTML* елемената на које желимо да применимо стил из класе. Неке од класа које су на располагању за додатно стилизовање *HTML* елемената су:
 
-- ``swatch-primary``, ``swatch-secondary``
-- ``btn-primary``, ``btn-secondary``
-- ``table``, ``list``, ``form``
+- ``btn-primary``, ``btn-secondary`` и друге за стилизовање дугмади,
+- ``table``, ``table-striped`` и друге за стилизовање табела,
+- ``list`` за стилизовање листи и
+- многе друге.
 
 Табеле
 ------
@@ -22,45 +23,55 @@ Bootstrap класе
 
 Наведене класе се могу комбиновати, нпр. ``table table-striped table-hover`` ће представљати табелу која има наизменично обојене редове и ред преко ког прелази миш биће означен.
 
-У следећем примеру је основна табела. Испробајте неке комбинације горе наведених класа:
+У следећем примеру је основна табела. Испробајте следеће комбинације класа да видите резултат:
 
-.. activecode:: bootstrap_klase_tabele
-    :language: html
-    :nocodelens:
+- ``table table-bordered``
+- ``table table-striped``
+- ``table table-striped table-bordered``
 
+.. petlja-editor:: bootstrap_klase_tabele
+
+    style.css
+    body {
+        padding: 20px;
+    }
+    ~~~
+    index.html
+    <!doctype html>
     <html>
-        <head>
-            <title>Bootstrap табеле</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-        </head>
-        <body>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <td>#</td>
-                        <td>Име</td>
-                        <td>Време</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Петар Петровић</td>
-                        <td>01:05:13</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Марко Марковић</td>
-                        <td>01:07:52</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Станко Станковић</td>
-                        <td>01:07:55</td>
-                    </tr>
-                </tbody>
-            </table>
-        </body>
+    <head>
+        <title>Bootstrap табеле</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Име</td>
+                    <td>Време</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Петар Петровић</td>
+                    <td>01:05:13</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Марко Марковић</td>
+                    <td>01:07:52</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Станко Станковић</td>
+                    <td>01:07:55</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
     </html>
 
 Постоје класе које омогућавају напредно стилизовање редова и ћелија. Прочитајте више на `Bootstrap табеле <https://getbootstrap.com/docs/5.2/content/tables/>`_ веб-страни.
@@ -87,25 +98,24 @@ Bootstrap класе
 
 Као резултат, листа почасних доктората Николе Тесле би била приказана следећим стилом:
 
-.. activecode:: bootstrap_liste_1
-    :language: html
-    :nocodelens:
+.. petlja-editor:: bootstrap_liste_1
 
+    index.html
     <html>
-        <head>
-            <title>Bootstrap листе</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-        </head>
-        <body>
-            <h2>Почасни докторати</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Техничка школа, Беч, 1908.</li>
-                <li class="list-group-item">Универзитет у Београду, 1926.</li>
-                <li class="list-group-item">Универзитет у Загребу, 1926.</li>
-                <li class="list-group-item">Техничка школа, Праг, 1936.</li>
-                <li class="list-group-item">Универзитет у Греноблу, 1938.</li>
-            </ul>
-        </body>
+    <head>
+        <title>Bootstrap листе</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    </head>
+    <body>
+        <h2>Почасни докторати</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Техничка школа, Беч, 1908.</li>
+            <li class="list-group-item">Универзитет у Београду, 1926.</li>
+            <li class="list-group-item">Универзитет у Загребу, 1926.</li>
+            <li class="list-group-item">Техничка школа, Праг, 1936.</li>
+            <li class="list-group-item">Универзитет у Греноблу, 1938.</li>
+        </ul>
+    </body>
     </html>
 
 Водоравне листе
@@ -114,25 +124,23 @@ Bootstrap класе
 
 Додељивањем класе ``list-group-horizontal`` на листу, елементи листе се приказују водоравно (у низу, један до другог).
 
-Осим тога, употребом класе ``list-group-item disabled`` постижемо да се појави онемогућени линк, тј. линк на који не може да се кликне.
+Осим тога, употребом класе ``list-group-item disabled`` постижемо да се појави онемогућени линк, тј. линк на који не може да се кликне. Онемогућени линкови могу, на пример, да се користе за везе ка деловима нашег сајта за које смо испланирали везе, али још нисмо направили одговарајуће странице.
 
-.. activecode:: bootstrap_liste_2
-    :language: html
-    :nocodelens:
+.. petlja-editor:: bootstrap_liste_2
 
+    index.html
     <html>
-        <head>
-            <title>Bootstrap листе</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-        </head>
-        <body>
-            <div class="list-group list-group-horizontal">
-                <a href="https://petlja.org/" class="list-group-item disabled">Прва онемогућена ставка</a>
-                <a href="https://petlja.org/" class="list-group-item disabled">Друга онемогућена ставка</a>
-                <a href="https://petlja.org/" class="list-group-item">Трећа ставка</a>
-            </div>
-        </body>
+    <head>
+        <title>Bootstrap листе</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="list-group list-group-horizontal">
+            <a href="https://petlja.org/" class="list-group-item disabled">Прва онемогућена ставка</a>
+            <a href="https://petlja.org/" class="list-group-item disabled">Друга онемогућена ставка</a>
+            <a href="https://petlja.org/" class="list-group-item">Трећа ставка</a>
+        </div>
+    </body>
     </html>
 
-Онемогућени линкови могу, на пример, да се користе за везе ка деловима нашег сајта за које смо испланирали везе, али још нисмо направили одговарајуће странице.
 

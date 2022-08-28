@@ -12,7 +12,7 @@ Bootstrap класе – питања
     :feedback_c: Не.
     :feedback_d: Не.
 
-    Да ли само укључивање библиотеке *Bootstrap* у HTML страну утиче на њен изглед?
+    Да ли укључивање библиотеке *Bootstrap* у HTML страну утиче на њен изглед?
 
 
 
@@ -32,9 +32,10 @@ Bootstrap класе – питања
 
 
 .. mchoice:: bootstrap_klase_q3
-    :answer_a: "table-striped"
+    :answer_a: "table-inverse"
     :answer_b: "table-bordered"
     :answer_c: "table-dark"
+    :answer_d: "table-grey"
     :correct: b, c
 
     Које класе треба доделити табели да би она овако изгледала (означите све тачне одговоре)?

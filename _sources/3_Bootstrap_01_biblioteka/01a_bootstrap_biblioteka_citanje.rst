@@ -29,17 +29,19 @@ Bootstrap библиотека
 Коришћење *Bootstrap* библиотеке
 --------------------------------
 
-*Bootstrap* библиотеку можемо да користимо на два основна начина.
+*Bootstrap* библиотеку можемо да користимо на два основна начина:
+
+#. укључивањем библиотеке са јавно доступних локација,
+#. укључивањем преузете библиотеке.
 
 Јавно доступне локације
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Први, једноставнији (и ефикаснији) начин је да линкујемо на јавно доступну верзију из *HTML* кôда наше стране, као што је приказано у следећем примеру:
 
-.. activecode:: bootstrap_intro
-    :language: html
-    :nocodelens:
+.. petlja-editor:: bootstrap_intro
 
+    index.html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -47,11 +49,11 @@ Bootstrap библиотека
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     </head>
     <body>
-    <div class="container-fluid">
-      <p>Овде треба ставити садржај стране</p>
-    </div>
+        <div class="container-fluid">
+          <p>Овде треба ставити садржај стране</p>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
     </body>
     </html>

@@ -17,34 +17,38 @@ Bootstrap подршка компонентама
 
 Навигационе траке (*Navbar*, скраћено од енгл. *navigation bar*) су компоненте које се налазе на врху стране и садрже меније, логое и поља за претрагу која се виде на многим веб-странама.
 
+Навигациона линија је *HTML* елемент који се зове ``<nav>``, а са којим смо се упознали у секцији о распореду елемената. Да би ``<nav>`` елемент изгледао као навигациона линија са слике, потребно је доделити му класу ``navbar``.
+
+Класа ``bg-light`` додаје позадинску боју и можете пробати у примеру како би изгледало са класaма ``navbar-dark bg-dark``.
+
+Класа ``navbar-nav`` означава листу ставки, где би свака ставка била представљена класом ``nav-item``. Да би омогућили простор између линкова поставили смо ``mx-1``, али слободно испробајте како изгледа навигација без те класе.
+
 Пример навигационе компоненте дат је следећим *HTML* кôдом:
 
-.. activecode:: bootstrap_navbar
-    :language: html
-    :nocodelens:
+.. petlja-editor:: bootstrap_navbar
 
+    index.html
+    <!doctype html>
     <html>
-        <head>
-            <title>Bootstrap навигациона трака</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-        </head>
-        <body>
-            <nav class="navbar bg-light">
-                <a href="https://petlja.org" class="navbar-brand">Лого</a>
+    <head>
+        <title>Bootstrap навигациона трака</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar bg-light">
+            <a href="https://petlja.org" class="navbar-brand">Лого</a>
 
-                <ul class="navbar-nav flex-row">
-                    <li class="nav-item mx-1">
-                        <a href="https://petlja.org" class="nav-link">Линк 1</a>
-                    </li>
-                    <li class="nav-item mx-1">
-                        <a href="https://petlja.org" class="nav-link">Линк 2</a>
-                    </li>
-                </ul>
-            </nav>
-        </body>
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item mx-1">
+                    <a href="https://petlja.org" class="nav-link">Линк 1</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a href="https://petlja.org" class="nav-link">Линк 2</a>
+                </li>
+            </ul>
+        </nav>
+    </body>
     </html>
-
-Из примера видимо да је навигациона линија *HTML* елемент који се зове ``<nav>``, а са којим смо се упознали у секцији о распореду елемената. Да би ``<nav>`` елемент изгледао као навигациона линија са слике, потребно је доделити му класу ``navbar``. Класа ``bg-light`` додаје позадинску боју и можете пробати у примеру како би изгледало са класaма ``navbar-dark bg-dark``.
 
 .. questionnote::
 
@@ -59,41 +63,47 @@ Bootstrap подршка компонентама
 
 Страничење (енгл. *pagination*) је често коришћена компонента која се ставља на странама где се не приказују сви резултати, него је потребно, преласком на следећу страну, приказати нови скуп резултата. Пример једне компоненте за страничење која омогућава да се пређе на претходну или следећу страну или да се директно пређе на прву, другу или трећу страну је приказана је следећим примером:
 
-.. activecode:: bootstrap_stranicenje
-    :language: html
-    :nocodelens:
+У *HTML* треба у ``<nav>`` елемент поставити листу ``<ul>`` и додати одговарајуће *CSS* класе као што су ``pagination`` и ``page-item``, чиме се добија стилизована контрола за страничење резултата.
 
+Додељивањем класа ``disabled`` и ``active`` стилизују се везе да изгледају онемогућено или активно. Онемогућена веза може означавати страну којој није могуће приступити. На пример ако смо тренутно на првој страни, обично би онемогућили дугме за претходну страну јер не постоји ниједна страна пре прве.
+
+.. petlja-editor:: bootstrap_stranicenje
+
+    main.css
+    body {
+        padding: 20px;
+    }
+    ~~~
+    index.html
+    <!doctype html>
     <html>
-        <head>
-            <title>Bootstrap страничење</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-        </head>
-        <body>
-            <nav aria-label="Пример страничења">
-              <ul class="pagination">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#">претходна</a>
-                </li>
-                <li class="page-item active">
-                    <a class="page-link" href="#">4</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="#">5</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="#">6</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="#">следећа</a>
-                </li>
-              </ul>
-            </nav>
-        </body>
+    <head>
+        <title>Bootstrap страничење</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    <body>
+        <nav aria-label="Пример страничења">
+          <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link" href="#">претходна</a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">следећа</a>
+            </li>
+          </ul>
+        </nav>
+    </body>
     </html>
-
-Као што видимо, у *HTML* треба у ``<nav>`` елемент поставити листу ``<ul>`` и додати одговарајуће *CSS* класе као што су ``pagination`` и ``page-item``, чиме се добија стилизована контрола за страничење резултата.
-
-Додељивањем класа ``disabled`` и ``active`` стилизују се везе да изгледају онемогућено или активно.
 
 .. questionnote::
 
@@ -111,30 +121,42 @@ Bootstrap подршка компонентама
 
 Картице (енгл. *Cards*) су компоненте помоћу којих издвајамо независне целине у садржају. Често је главна функционалност картице да омогући везу ка другој веб-страни. При томе, за разлику од обичног линка, картица може да садржи више елемената, као што су наслов, слика, краћи текст о страни на коју упућује, дугме које води ка тој страни итд.
 
+Кључне класе за картице су:
+
+- ``card`` за стилизовање главног оквира картице,
+- ``card-img-top`` за стилизовање слике, уколико картица има слику,
+- ``card-body`` која окружује садржај картице,
+- ``card-title`` за стилизовање наслова,
+- ``card-text`` за стилизовање текста.
+
 *HTML* кôд компоненте картице је приказан у следећем примеру:
 
-.. activecode:: bootstrap_kartice
-    :language: html
-    :nocodelens:
+.. petlja-editor:: bootstrap_kartice
 
+    main.css
+    body {
+        padding: 20px;
+    }
+    ~~~
+    index.html
+    <!doctype html>
     <html>
-        <head>
-            <title>Bootstrap картица</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-        </head>
-        <body>
-            <div class="card" style="width: 200px;">
-                <img src="https://petlja.org/images/petlja-logo-bt.svg" class="card-img-top p-2" alt="Текст за приказ уместо слике на врху картице">
-                <div class="card-body">
-                  <h5 class="card-title">Наслов картице</h5>
-                  <p class="card-text">Текст који ће бити приказан у оквиру картице.</p>
-                  <a href="#" class="btn btn-primary">Дугме на дну картице</a>
-                </div>
+    <head>
+        <title>Bootstrap картица</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    <body>
+        <div class="card" style="width: 200px;">
+            <img src="https://petlja.org/images/petlja-logo-bt.svg" class="card-img-top p-2" alt="Текст за приказ уместо слике на врху картице">
+            <div class="card-body">
+              <h5 class="card-title">Наслов картице</h5>
+              <p class="card-text">Текст који ће бити приказан у оквиру картице.</p>
+              <a href="#" class="btn btn-primary">Дугме на дну картице</a>
             </div>
-        </body>
+        </div>
+    </body>
     </html>
-
-Из датог примера видимо како можемо да направимо картицу: у један ``<div>`` блок постављамо *HTML* елементе за наслов (таг ``<h5>``), пасус текста (таг ``<p>``) и линк (таг ``<а>``), уз одговарајуће *CSS* класе. У овом примеру, линк је помоћу класе ``btn btn-primary`` стилизован као дугме.
 
 .. questionnote::
 
