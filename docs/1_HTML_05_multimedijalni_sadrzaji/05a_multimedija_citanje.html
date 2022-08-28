@@ -6,6 +6,7 @@
     <title>Мултимедијални садржаји</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -430,11 +432,11 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Подсетимо се, самозатварајући таг је целина за себе и нема пратећег парњака, јер не ограничава део текста који припада његовом елементу. Раније смо помињали <em>HTML</em> елемент <code class="docutils literal notranslate"><span class="pre">&lt;br/&gt;</span></code> (прелазак у нови ред), који се такође представља самозатварајућим тагом.</p>
 <p>Елемент <code class="docutils literal notranslate"><span class="pre">img</span></code> је још један елемент који може да буде цео садржан у једном самозатварајућем тагу.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Поред <code class="docutils literal notranslate"><span class="pre">src</span></code> атрибута, свака слика треба да има текст који ће се приказати уместо ње у случају да се слика не може учитати или приказати у прегледачу. Овај текст се ставља у оквиру <code class="docutils literal notranslate"><span class="pre">alt</span></code> атрибута.</p>
 <p><em>HTML</em> елемент <code class="docutils literal notranslate"><span class="pre">&lt;img&gt;</span></code> веома личи на елементе везе објашњене у претходној лекцији, уз једну разлику. Слика која се референцира се директно убацује и приказује на месту овог елемента.</p>
 <p>Помоћу елемента <code class="docutils literal notranslate"><span class="pre">&lt;img&gt;</span></code> прегледач може да прикаже слике у различитим форматима, као што су <em>JPG/JPEG</em>, <em>PNG</em>, <em>WEBP</em>, <em>SVG</em>. На веб странама се најчешће користе <em>JPEG</em> формати, зато што дају најбољи однос квалитета и величине слике. <em>PNG</em> формат се може користити како би се приказале квалитетније слике, али често је цена спорије учитавање стране. Због брзине учитавања посебно треба избегавати формате намењене пре свега за квалитетно штампање, као што је <em>TIF</em>, јер су фајлови у том формату често велики. Пожељно је користити прогресивни формат слика (нпр. прогресивни <em>JPEG</em>) у случају да су слике веће и спорије се учитавају. Класични формати исцртавају део по део слике (у хоризонталним тракама), док прогресивни исцртају одмах целу слику, али лошијег квалитета (замућено). Потом се, како се учитава додатни садржај слике, квалитет приказа поправља и слика се изоштрава. У случају да се величина слике мења, пожељно је користити скалабилне (векторске) формате као што је <em>SVG</em>. <em>GIF</em> слика се често користи када је потребно направити неку анимирану илустрацију, која је довољно једноставна и не захтева пратећи аудио или контроле (пауза, заустављање, позиционирање на неки тренутак).</p>

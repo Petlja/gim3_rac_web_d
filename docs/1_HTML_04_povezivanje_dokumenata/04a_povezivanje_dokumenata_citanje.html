@@ -6,6 +6,7 @@
     <title>Повезивање докумената</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -435,7 +437,7 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p><strong>Атрибути</strong></p>
 <p>Подсетимо се, када смо говорили о струткури <em>HTML</em> документа, поменули смо атрибут <code class="docutils literal notranslate"><span class="pre">lang</span></code> елемента <code class="docutils literal notranslate"><span class="pre">html</span></code>.</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
@@ -451,7 +453,7 @@
 </div>
 <p>У претходним примерима, отварајући тагови који означавају почетак елемента били су најчешће између ознака <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> и <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> и садржавали су само име елемента. Као што видимо, језик <em>HTML</em> нам омогућава да сваки елемент додатно опишемо атрибутима, који се пишу у отварајућем тагу, у облику <code class="docutils literal notranslate"><span class="pre">атрибут1=&quot;вредност1&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">атрибут2=&quot;вредност2&quot;</span></code> итд, или у неким случајевима само <code class="docutils literal notranslate"><span class="pre">атрибут1</span></code>, <code class="docutils literal notranslate"><span class="pre">атрибут2</span></code>, без вредности (што зависи од конкретног атрибута, а такве примере ћемо видети ускоро). У овом примеру, атрибут <code class="docutils literal notranslate"><span class="pre">href</span></code> описује на коју <em>HTML</em> страну треба прећи када се кликне на текст.</p>
 
-    </p></div></div>
+    </div></div>
 <p><em>HTML</em> документи који се користе у претходном примеру се налазе у истом директоријуму као и документ у коме се налазе <em>HTML</em> елементи <code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code>. Међутим, ништа нас не спречава да фајлове распоредимо по посебним директоријумима и да их повежемо. На пример, претпоставимо да су стране о научницима у поддиректоријуму <em>naucnici</em>, стране о фудбалерима у поддиректоријуму <em>fudbaleri</em>, а стране о кошаркашима у поддиректоријуму <em>kosarkasi</em>. Ако бисмо хтели да повежемо своју страну са њима, могли бисмо да користимо линкове приказане у следећем примеру:</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;naucnici/NikolaTesla.html&quot;</span><span class="p">&gt;</span>Никола Тесла<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;naucnici/MihajloPupin.html&quot;</span><span class="p">&gt;</span>Михајло Пупин<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
