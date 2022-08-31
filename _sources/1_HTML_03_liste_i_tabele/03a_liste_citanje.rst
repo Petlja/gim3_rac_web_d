@@ -8,7 +8,8 @@
 .. image:: ../../_images/html/wiki_pocasni_doktorati.png
     :width: 425px
     :align: center
-
+    :class: screenshot-shadow
+    
 |
 
 Докторати које је Никола Тесла добио су кратки текстуални записи које желимо да набројимо у виду листе. Свака ставка у листи се представља елементом ``<li>`` (енгл. *list item*), овако:

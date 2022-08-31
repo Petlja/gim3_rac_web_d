@@ -150,7 +150,7 @@
     </head>
     <body>
         <div>
-            <img src="http://localhost:1234/macka_1.jpeg" alt="Никола Тесла"/>
+            <img src="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/kurs-treci-gim-drustveni/_static/macka_1.jpeg" alt="Никола Тесла"/>
 
             Никола Тесла (Смиљан, 10. јул 1856 — Њујорк, 7. јануар 1943)
             био је српски и амерички проналазач, инжењер електротехнике

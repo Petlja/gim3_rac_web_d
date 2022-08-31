@@ -67,7 +67,7 @@
     <html>
       <body>
         <video controls width="500">
-          <source src="http://localhost:1234/video.mp4" type="video/mp4" />
+          <source src="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/kurs-treci-gim-drustveni/_static/video.mp4" type="video/mp4" />
           Ако видите овај текст, онда ваш прегледач не може да прикаже видео.
         </video>
       </body>
@@ -100,13 +100,13 @@
     <!doctype html>
     <html>
       <body>
-        <video controls loop poster="http://localhost:1234/video-poster.jpg" width="500">
-          <source src="http://localhost:1234/video.mp4" type="video/mp4" />
+        <video controls loop poster="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/kurs-treci-gim-drustveni/_static/video-poster.jpg" width="500">
+          <source src="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/kurs-treci-gim-drustveni/_static/video.mp4" type="video/mp4" />
           <!-- Српски превод - WEBVTT формат превода -->
           <track
             default kind="captions"
             srclang="rs" label="Српски"
-            src="http://localhost:1234/video.vtt" />
+            src="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/kurs-treci-gim-drustveni/_static/video.vtt" />
           Ако видите овај текст, онда ваш прегледач не може да прикаже видео.
         </video>
       </body>
@@ -142,6 +142,7 @@
 .. image:: ../../_images/html/ff_share_embed_video.gif
     :width: 480px
     :align: center
+    :class: screenshot-shadow
 
 Све што је потребно да урадите је да овај *HTML* кôд убаците у вашу страну и *YouTube* видео ће бити пуштен.
 
@@ -169,7 +170,7 @@
    <html>
      <body>
        <audio controls loop>
-         <source src="http://localhost:1234/ding.mp3" type="audio/mpeg" />
+         <source src="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/kurs-treci-gim-drustveni/_static/ding.mp3" type="audio/mpeg" />
          Ако видите овај текст, онда ваш прегледач не може да прикаже аудио.
        </audio>
      </body>
