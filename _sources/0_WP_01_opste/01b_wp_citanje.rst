@@ -6,14 +6,14 @@
 Први корак је одабир домена веб-стране. *WordPress.com* даје могућност куповине домена, али је за наше потребе довољна опција бирања бесплатног под-домена. Добићете опцију за одабир под-домена у формату ``https://<под-домен>.wordpress.com``.
 
 .. figure:: ../../_images/wordpress/register_domain.png
-    :width: 400
+    :width: 780px
     :align: center
     :class: screenshot-shadow
 
 Следећи корак је одабир пакета услуга. За потребе овог курса, довољно је искористити опцију бесплатног веб-сајта (*start with a free site*).
 
 .. figure:: ../../_images/wordpress/register_plan.png
-    :width: 600
+    :width: 780px
     :align: center
     :class: screenshot-shadow
 
@@ -49,7 +49,7 @@
 
 .. figure:: ../../_images/wordpress/statistika.webp
    :align: center
-   :width: 550
+   :width: 780px
    :class: screenshot-shadow
 
 Преко ставке *Traffic* помоћног менија корисник може да прати број прегледа (*views*) и број посетилаца (*visitors*), било по данима, недељама, месецима или годинама. Посебно су издвојене статистике за последњи дан, а може се пратити колико посетилаца долази из које земље, број кликова приликом посета и разни други подаци.
@@ -82,7 +82,7 @@
 
 .. figure:: ../../_images/wordpress/comments.png
    :align: center
-   :width: 600
+   :width: 780px
    :class: screenshot-shadow
 
 Секција *Comments* садржи подсекције:
