@@ -175,8 +175,9 @@ Bootstrap подршка компонентама
 Једна од најчешће коришћених компоненти у веб-апликацијама је дијалог који приказује формулар или текст. Дијалог се приказује преко осталих компоненти, док је остатак стране затамњен и неактиван.
 
 .. figure:: ../../_images/bootstrap/dijalog.png
-    :width: 600px
+    :width: 780px
     :align: center
+    :class: screenshot-shadow
 
 Уз помоћ *Bootstrap* библиотеке се дијалог и дугме које га отвара лако имплементирају у *HTML* кôду у неколико корака.
 
@@ -187,42 +188,43 @@ Bootstrap подршка компонентама
 
 Потом је у наставку потребно додати *HTML* кôд којим се представља садржај дијалога, који ће бити приказан када се притисне дугме. Овај елемент мора да има вредност идентификатора која се слаже са вредношћу из атрибута ``data-bs-target`` дугмета које покреће дијалог.
 
-.. activecode:: bootstrap_modal
-    :language: html
-    :nocodelens:
+.. petlja-editor:: bootstrap_modal
 
+    index.html
+    <!doctype html>
     <html>
-        <head>
-            <title>Bootstrap дијалог</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        </head>
-        <body>
-            <!-- Дугме које ће отворити модални диалог -->
-            <button type="button" class="btn btn-danger"
-                    data-bs-toggle="modal" data-bs-target="#ПримерМодалногДијалога">
-              Обриши ставку
-            </button>
-            <p>Остали садржај стране</p>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Bootstrap дијалог</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Дугме које ће отворити модални диалог -->
+        <button type="button" class="btn btn-danger"
+                data-bs-toggle="modal" data-bs-target="#ПримерМодалногДијалога">
+          Обриши ставку
+        </button>
+        <p>Остали садржај стране</p>
 
-            <!-- Структура модалног дијалога -->
-            <div class="modal fade" id="ПримерМодалногДијалога" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ПримерОзнакеНаслова">Обриши ставку</h5>
-                  </div>
-                  <div class="modal-body">
-                    Да ли сте сигурни да желите да обришете ставку?
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Не</button>
-                    <button type="button" class="btn btn-danger">Потврди брисање</button>
-                  </div>
-                </div>
+        <!-- Структура модалног дијалога -->
+        <div class="modal fade" id="ПримерМодалногДијалога" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ПримерОзнакеНаслова">Обриши ставку</h5>
+              </div>
+              <div class="modal-body">
+                Да ли сте сигурни да желите да обришете ставку?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Не</button>
+                <button type="button" class="btn btn-danger">Потврди брисање</button>
               </div>
             </div>
-        </body>
+          </div>
+        </div>
+    </body>
     </html>
 
 

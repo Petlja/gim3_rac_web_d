@@ -40,6 +40,7 @@ Bootstrap класе
     <!doctype html>
     <html>
     <head>
+        <meta charset="utf-8"/>
         <title>Bootstrap табеле</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css"/>
@@ -48,9 +49,9 @@ Bootstrap класе
         <table class="table">
             <thead>
                 <tr>
-                    <td>#</td>
-                    <td>Име</td>
-                    <td>Време</td>
+                    <th>#</td>
+                    <th>Име</td>
+                    <th>Време</td>
                 </tr>
             </thead>
             <tbody>

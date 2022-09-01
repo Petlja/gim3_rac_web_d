@@ -10,6 +10,7 @@
 .. figure:: ../../_images/bootstrap/kontejneri.png
     :width: 780px
     :align: center
+    :class: screenshot-shadow
 
 Контејнери ``col-1`` су најужи и може се ставити 12 блокова ове ширине у један ред. Блокови различитих ширина се могу комбиновати у једном реду (на пример ``col-4`` и ``col-8`` у трећем реду), под условом да не пређу укупну ширину 12.
 
@@ -133,7 +134,7 @@
 Потребно је направити *Bootstrap* распоред за следећи дизајн  (занемарићемо садржај):
 
 .. figure:: ../../_images/bootstrap/raspored2.png
-    :width: 500px
+    :width: 780px
     :align: center
     :class: screenshot-shadow
 
