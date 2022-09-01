@@ -11,11 +11,11 @@
 
 Ми ћемо у решењу користити ове слике:
 
-.. image:: ../../_images/js/emo1.png
+.. figure:: ../../_images/js/emo1.png
     :width: 100px
-.. image:: ../../_images/js/emo2.png
+.. figure:: ../../_images/js/emo2.png
     :width: 100px
-.. image:: ../../_images/js/emo3.png
+.. figure:: ../../_images/js/emo3.png
     :width: 100px
 
 Ако желите, можете да преузмете кôд (копирате га у фајл са екстензијом *html*) и прилагодите га, тако да када га отворите директно у прегледачу - он приказује слике по вашем избору.

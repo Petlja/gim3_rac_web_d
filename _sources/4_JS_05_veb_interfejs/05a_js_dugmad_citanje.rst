@@ -29,7 +29,7 @@
 
     У случају да користите *Twitter Bootstrap* за стилизовање страна, можете лако да примените различите стилове за дугмад, као на пример:
 
-    .. image:: ../../_images/bootstrap/dugmad_stil.png
+    .. figure:: ../../_images/bootstrap/dugmad_stil.png
         :width: 624px
         :align: center
 

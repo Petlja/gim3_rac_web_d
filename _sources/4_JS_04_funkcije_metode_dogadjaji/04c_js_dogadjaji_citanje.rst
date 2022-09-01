@@ -214,11 +214,11 @@
 
 У следећем примеру дата је веб страна са ове 3 слике:
 
-.. image:: ../../_images/js/emo1.png
+.. figure:: ../../_images/js/emo1.png
     :width: 100px
-.. image:: ../../_images/js/emo2.png
+.. figure:: ../../_images/js/emo2.png
     :width: 100px
-.. image:: ../../_images/js/emo3.png
+.. figure:: ../../_images/js/emo3.png
     :width: 100px
 
 

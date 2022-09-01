@@ -173,6 +173,12 @@ CSS Димензије елемената
 - ``padding: 10px`` дефинише простор унутар параграфа од леве и десне ивице; 10 пиксела по страни нам даје 20 пиксела,
 - ``border: 1px solid green`` дефинише дебљину ивице; 1 пиксел по страни нам даје 2 пиксела.
 
+Да би избегли овакве ситуације где морамо да рачунамо на задат простор унутар параграфа и ивице, често се у пракси користи ``box-sizing: border-box``. На пример, популарна CSS библиотека Bootstrap на свим елементима дефинише својство на свим елементима користећи универзални селектор ``*``.
+
+.. code-block:: css
+
+    * { box-sizing: border-box; }
+
 На *W3CSchools* сајту пронађите више информација о `моделу оквира <https://www.w3schools.com/css/css_boxmodel.asp>`_ и о `димензијама <https://www.w3schools.com/css/css_dimension.asp>`_.
 
 Пример – слике љубимаца
@@ -257,10 +263,10 @@ CSS Димензије елемената
             </nav>
 
             <section>
-                <img src="http://localhost:1234/macka_1.jpeg" alt="Мачка која лежи"/>
-                <img src="http://localhost:1234/macka_2.jpeg" alt="Мачка која се смеје"/>
-                <img src="http://localhost:1234/macka_3.jpeg" alt="Мачка задовољна ручком"/>
-                <img src="http://localhost:1234/macka_4.jpeg" alt="Мачка задовољна ручком"/>
+                <img src="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/kurs-treci-gim-drustveni/_static/macka_1.jpeg" alt="Мачка која лежи"/>
+                <img src="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/kurs-treci-gim-drustveni/_static/macka_2.jpeg" alt="Мачка која се смеје"/>
+                <img src="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/kurs-treci-gim-drustveni/_static/macka_3.jpeg" alt="Мачка задовољна ручком"/>
+                <img src="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/kurs-treci-gim-drustveni/_static/macka_4.jpeg" alt="Мачка задовољна ручком"/>
             </section>
         </main>
 

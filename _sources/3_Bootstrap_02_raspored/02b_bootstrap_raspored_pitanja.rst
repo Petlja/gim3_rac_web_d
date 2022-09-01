@@ -59,13 +59,13 @@
           <div class="col">.</div>
         </div>
     
-    .. image:: ../../_images/bootstrap/layout31.png
+    .. figure:: ../../_images/bootstrap/layout31.png
         :width: 220px
-    .. image:: ../../_images/bootstrap/layout32.png
+    .. figure:: ../../_images/bootstrap/layout32.png
         :width: 220px
-    .. image:: ../../_images/bootstrap/layout33.png
+    .. figure:: ../../_images/bootstrap/layout33.png
         :width: 220px
-    .. image:: ../../_images/bootstrap/layout34.png
+    .. figure:: ../../_images/bootstrap/layout34.png
         :width: 220px
 
 
@@ -97,13 +97,13 @@
           <div class="col-10">...</div>
         </div>
     
-    .. image:: ../../_images/bootstrap/layout41.png
+    .. figure:: ../../_images/bootstrap/layout41.png
         :width: 220px
-    .. image:: ../../_images/bootstrap/layout42.png
+    .. figure:: ../../_images/bootstrap/layout42.png
         :width: 220px
-    .. image:: ../../_images/bootstrap/layout43.png
+    .. figure:: ../../_images/bootstrap/layout43.png
         :width: 220px
-    .. image:: ../../_images/bootstrap/layout44.png
+    .. figure:: ../../_images/bootstrap/layout44.png
         :width: 220px
 
 
@@ -142,13 +142,13 @@
         </div>
 
     
-    .. image:: ../../_images/bootstrap/layout51.png
+    .. figure:: ../../_images/bootstrap/layout51.png
         :width: 220px
-    .. image:: ../../_images/bootstrap/layout52.png
+    .. figure:: ../../_images/bootstrap/layout52.png
         :width: 220px
-    .. image:: ../../_images/bootstrap/layout53.png
+    .. figure:: ../../_images/bootstrap/layout53.png
         :width: 220px
-    .. image:: ../../_images/bootstrap/layout54.png
+    .. figure:: ../../_images/bootstrap/layout54.png
         :width: 220px
 
 

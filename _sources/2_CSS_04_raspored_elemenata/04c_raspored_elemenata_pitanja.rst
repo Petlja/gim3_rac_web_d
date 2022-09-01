@@ -51,7 +51,7 @@
 
     Дугмад са слике су елементи истог типа и налазе се у истом *HTML* блоку. На који начин су два дугмета са десне стране могла да буду одмакнута од остала четири?
     
-    .. image:: ../../_images/css/raspored_test3.png
+    .. figure:: ../../_images/css/raspored_test3.png
         :width: 550px
         :align: center
 
@@ -78,7 +78,7 @@
 
     Који од понуђених стилова даје изглед у прегледачу као на следећој слици?
     
-    .. image:: ../../_images/css/selektori_test5.png
+    .. figure:: ../../_images/css/selektori_test5.png
         :width: 600px
         :align: center
 
@@ -97,19 +97,19 @@
 
     За веб-страну која изгледа овако
 
-    .. image:: ../../_images/css/raspored_test4_pitanje.png
+    .. figure:: ../../_images/css/raspored_test4_pitanje.png
         :width: 288px
         :align: center
 
     одредите распоред блокова који јој највише одговара:
 
-    .. image:: ../../_images/css/raspored_test4_odg1.png
+    .. figure:: ../../_images/css/raspored_test4_odg1.png
         :width: 240px
-    .. image:: ../../_images/css/raspored_test4_odg2.png
+    .. figure:: ../../_images/css/raspored_test4_odg2.png
         :width: 240px
-    .. image:: ../../_images/css/raspored_test4_odg3.png
+    .. figure:: ../../_images/css/raspored_test4_odg3.png
         :width: 240px
-    .. image:: ../../_images/css/raspored_test4_odg4.png
+    .. figure:: ../../_images/css/raspored_test4_odg4.png
         :width: 240px
 
 
@@ -127,18 +127,18 @@
 
     На основу изгледа ове веб-стране...
 
-    .. image:: ../../_images/css/raspored_test5_pitanje.png
+    .. figure:: ../../_images/css/raspored_test5_pitanje.png
         :width: 360px
         :align: center
 
     ...одредите који од понуђених распореда блокова јој одговара:
 
-    .. image:: ../../_images/css/raspored_test5_odg1.png
+    .. figure:: ../../_images/css/raspored_test5_odg1.png
         :width: 300px
-    .. image:: ../../_images/css/raspored_test5_odg2.png
+    .. figure:: ../../_images/css/raspored_test5_odg2.png
         :width: 300px
-    .. image:: ../../_images/css/raspored_test5_odg3.png
+    .. figure:: ../../_images/css/raspored_test5_odg3.png
         :width: 300px
-    .. image:: ../../_images/css/raspored_test5_odg4.png
+    .. figure:: ../../_images/css/raspored_test5_odg4.png
         :width: 300px
 

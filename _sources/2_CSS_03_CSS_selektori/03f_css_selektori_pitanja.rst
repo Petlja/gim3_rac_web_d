@@ -44,7 +44,7 @@ CSS селектори – питања
 
     Који од блокова са слике је најбоље стилизовати користећи идентификатор?
     
-    .. image:: ../../_images/css/selektori_test3.png
+    .. figure:: ../../_images/css/selektori_test3.png
         :width: 500px
         :align: center
 
@@ -63,7 +63,7 @@ CSS селектори – питања
 
     Које од блокова са слике је најбоље стилизовати користећи класу?
     
-    .. image:: ../../_images/css/selektori_test4.png
+    .. figure:: ../../_images/css/selektori_test4.png
         :width: 500px
         :align: center
 

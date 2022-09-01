@@ -40,7 +40,7 @@ Bootstrap класе – питања
 
     Које класе треба доделити табели да би она овако изгледала (означите све тачне одговоре)?
     
-    .. image:: ../../_images/bootstrap/tb_tabela.png
+    .. figure:: ../../_images/bootstrap/tb_tabela.png
         :width: 500px
         :align: center
 

@@ -15,16 +15,13 @@
     
 Елемент ``<img>`` нема садржај, тј. ништа не наводимо између отварајућег и затварајућег тага. Зато се овај елемент може написати и као самозатварајући таг, овако:
 
-.. petlja-editor:: slika_nikola_tesla_html
+.. petlja-editor:: slika_html
 
     index.html
     <!doctype html>
     <html>
       <body>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Tesla_circa_1890.jpeg" alt="Nikola Tesla" width="300"/>
-        <p>
-          Autor: Martin van Meytes, Public domain, via Wikimedia Commons
-        </p>
+        <img src="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/kurs-treci-gim-drustveni/_static/macka_1.jpeg" alt="Мачка" width="300"/>
       </body>
     </html>
 
@@ -139,7 +136,7 @@
     
 Ове елементе је лако додати у *HTML* стране када желите да убаците у страну неки *YouTube* видео. Довољно је да одете до видеа који желите да убаците, одаберете *Share* (подели) опцију и као начин за дељење одаберете *Embed* (убачени) тип дељења:
 
-.. image:: ../../_images/html/ff_share_embed_video.gif
+.. figure:: ../../_images/html/ff_share_embed_video.gif
     :width: 480px
     :align: center
     :class: screenshot-shadow

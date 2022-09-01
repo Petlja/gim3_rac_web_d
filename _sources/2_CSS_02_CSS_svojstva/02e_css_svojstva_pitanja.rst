@@ -41,7 +41,7 @@ CSS својства – питања
 
     Сви блокови приказани на слици имају исти стил. Какав је однос величина својстава ``margin`` и ``padding``?
 
-    .. image:: ../../_images/css/margin_padding_test1.png
+    .. figure:: ../../_images/css/margin_padding_test1.png
         :width: 500px
         :align: center
 
