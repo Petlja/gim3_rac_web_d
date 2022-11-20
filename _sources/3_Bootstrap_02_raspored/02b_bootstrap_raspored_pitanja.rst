@@ -61,12 +61,23 @@
     
     .. figure:: ../../_images/bootstrap/layout31.png
         :width: 220px
+
+        1
+
     .. figure:: ../../_images/bootstrap/layout32.png
         :width: 220px
+
+        2
+
     .. figure:: ../../_images/bootstrap/layout33.png
         :width: 220px
+        
+        3
+
     .. figure:: ../../_images/bootstrap/layout34.png
         :width: 220px
+
+        4
 
 
 
@@ -99,12 +110,23 @@
     
     .. figure:: ../../_images/bootstrap/layout41.png
         :width: 220px
+
+        1
+
     .. figure:: ../../_images/bootstrap/layout42.png
         :width: 220px
+
+        2
+
     .. figure:: ../../_images/bootstrap/layout43.png
         :width: 220px
+
+        3
+
     .. figure:: ../../_images/bootstrap/layout44.png
         :width: 220px
+
+        4
 
 
 
@@ -144,12 +166,23 @@
     
     .. figure:: ../../_images/bootstrap/layout51.png
         :width: 220px
+
+        1
+
     .. figure:: ../../_images/bootstrap/layout52.png
         :width: 220px
+
+        2
+
     .. figure:: ../../_images/bootstrap/layout53.png
         :width: 220px
+
+        3
+
     .. figure:: ../../_images/bootstrap/layout54.png
         :width: 220px
+
+        4
 
 
 .. Ускоро.

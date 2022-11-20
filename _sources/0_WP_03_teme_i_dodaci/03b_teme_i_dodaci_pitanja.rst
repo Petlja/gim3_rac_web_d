@@ -30,7 +30,7 @@
 .. mchoice:: wp_teme_dodaci_q3
     :answer_a: Нова секција система WordPress.
     :answer_b: Икона или дугме на нашој веб-страни.
-    :answer_c: Биџит је обично невидљив.
+    :answer_c: Виџит је обично невидљив.
     :correct: b
     :feedback_a: Не.
     :feedback_b: Тачно!
